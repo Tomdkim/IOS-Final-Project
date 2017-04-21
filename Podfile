@@ -7,6 +7,13 @@ target 'TestAcer' do
 
   # Pods for TestAcer
   pod 'Firebase/Core'
+  pod 'Firebase'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'SDWebImage', '~>3.8'
+  pod 'MBProgressHUD', '~> 1.0.0'
+
 
   target 'TestAcerTests' do
     inherit! :search_paths
