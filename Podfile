@@ -13,7 +13,9 @@ target 'TestAcer' do
   pod 'Firebase/Storage'
   pod 'SDWebImage', '~>3.8'
   pod 'MBProgressHUD', '~> 1.0.0'
-
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
 
   target 'TestAcerTests' do
     inherit! :search_paths
