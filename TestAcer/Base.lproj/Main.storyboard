@@ -341,7 +341,7 @@
             <objects>
                 <navigationController id="fVp-Xv-SyA" userLabel="Profile View Controller" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="NWT-gD-Q62"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="toF-Xw-ANV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="toF-Xw-ANV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -490,7 +490,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VU9-IL-uH9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2iH-rE-QJL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2iH-rE-QJL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
