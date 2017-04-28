@@ -9,16 +9,16 @@
 import UIKit
 
 class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    var cell: HistoryTableViewCell?
 
+    var cell: HistoryTableViewCell?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         historyTableView.delegate = self
         historyTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,7 +30,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //        return (pokemonArray?.count)!
         return 0
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        cell = tableView.dequeueReusableCell(withIdentifier: "tableID", for: indexPath) as? TableViewCell
         //        pokemon = pokemonArray?[indexPath.row]
@@ -72,13 +72,14 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //        performSegue(withIdentifier: "secondLink", sender: selectedIndexPath)
     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if let identifier = segue.identifier {
-                if identifier == "textStorage" {
-                    if let dest = segue.destination as? Text_ViewController {
-//                        dest.pokemonArray = sender as! [Pokemon]!
-                    }
-                }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier {
+            if identifier == "textStorage" {
+//                if let dest = segue.destination as? Text_ViewController {
+//                    //                        dest.pokemonArray = sender as! [Pokemon]!
+//                }
             }
         }
+    }
+
 }

@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3A4ECE1EADD4D40097C329 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A3A4ECD1EADD4D40097C329 /* GoogleService-Info.plist */; };
 		1A4F764D1EA9C0B4003680D3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F764C1EA9C0B4003680D3 /* SignUpViewController.swift */; };
 		1A4F764F1EA9D79F003680D3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F764E1EA9D79F003680D3 /* ProfileViewController.swift */; };
 		1A4F765B1EA9F511003680D3 /* GroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F765A1EA9F511003680D3 /* GroupsViewController.swift */; };
 		1A4F765D1EA9F51F003680D3 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F765C1EA9F51F003680D3 /* HistoryViewController.swift */; };
 		1A4F765F1EA9F532003680D3 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F765E1EA9F532003680D3 /* PostViewController.swift */; };
 		1A4F76611EA9F577003680D3 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F76601EA9F577003680D3 /* UpdateProfileViewController.swift */; };
+		1AB3C11B1EB2FE770096B143 /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3C11A1EB2FE770096B143 /* GroupsTableViewCell.swift */; };
+		1AB3C11D1EB2FF6A0096B143 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3C11C1EB2FF6A0096B143 /* HistoryTableViewCell.swift */; };
+		1AB3C11F1EB301C30096B143 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB3C11E1EB301C30096B143 /* TextViewController.swift */; };
 		1AE239A31EA06B7A009439CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239A21EA06B7A009439CF /* AppDelegate.swift */; };
 		1AE239AA1EA06B7A009439CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AE239A81EA06B7A009439CF /* Main.storyboard */; };
 		1AE239AC1EA06B7A009439CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE239AB1EA06B7A009439CF /* Assets.xcassets */; };
@@ -20,10 +24,6 @@
 		1AE239BA1EA06B7A009439CF /* TestAcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239B91EA06B7A009439CF /* TestAcerTests.swift */; };
 		1AE239C51EA06B7A009439CF /* TestAcerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239C41EA06B7A009439CF /* TestAcerUITests.swift */; };
 		1AE239D51EA07234009439CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239D41EA07234009439CF /* LoginViewController.swift */; };
-		7F1C699C1EADD5170042BC5E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F1C699B1EADD5170042BC5E /* GoogleService-Info.plist */; };
-		7FAEE4361EA9FC9B00D9A1BE /* Text ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEE4351EA9FC9B00D9A1BE /* Text ViewController.swift */; };
-		7FAEE4381EA9FE1600D9A1BE /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEE4371EA9FE1600D9A1BE /* GroupsTableViewCell.swift */; };
-		7FAEE43A1EA9FE2400D9A1BE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAEE4391EA9FE2400D9A1BE /* HistoryTableViewCell.swift */; };
 		931B6DECD6EF72308AC23930 /* Pods_TestAcerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E94F019492CDAEC9C92CB9C /* Pods_TestAcerTests.framework */; };
 		B7B6402F3EF7F421DDE330D7 /* Pods_TestAcerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0076047F45033906A01BB99 /* Pods_TestAcerUITests.framework */; };
 		D3A419ACB57E2431949E72B8 /* Pods_TestAcer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5878555CA9AB3BCF6669E3E8 /* Pods_TestAcer.framework */; };
@@ -49,12 +49,16 @@
 /* Begin PBXFileReference section */
 		0F925E174F030153DF7CB037 /* Pods-TestAcerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerUITests/Pods-TestAcerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1158F48C8C72BB75D99D016E /* Pods-TestAcerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerTests/Pods-TestAcerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A3A4ECD1EADD4D40097C329 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A4F764C1EA9C0B4003680D3 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1A4F764E1EA9D79F003680D3 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1A4F765A1EA9F511003680D3 /* GroupsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsViewController.swift; sourceTree = "<group>"; };
 		1A4F765C1EA9F51F003680D3 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		1A4F765E1EA9F532003680D3 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		1A4F76601EA9F577003680D3 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		1AB3C11A1EB2FE770096B143 /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
+		1AB3C11C1EB2FF6A0096B143 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		1AB3C11E1EB301C30096B143 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1AE2399F1EA06B7A009439CF /* TestAcer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAcer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AE239A21EA06B7A009439CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AE239A91EA06B7A009439CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,10 +76,6 @@
 		40DE30ACA4B482CBDA9F70F6 /* Pods-TestAcerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerUITests/Pods-TestAcerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5878555CA9AB3BCF6669E3E8 /* Pods_TestAcer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		641CF7499B4D4F5F0B0E4357 /* Pods-TestAcerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerTests/Pods-TestAcerTests.release.xcconfig"; sourceTree = "<group>"; };
-		7F1C699B1EADD5170042BC5E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7FAEE4351EA9FC9B00D9A1BE /* Text ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Text ViewController.swift"; sourceTree = "<group>"; };
-		7FAEE4371EA9FE1600D9A1BE /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
-		7FAEE4391EA9FE2400D9A1BE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		8E94F019492CDAEC9C92CB9C /* Pods_TestAcerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64F047B0FBBBCB523AA56AE /* Pods-TestAcer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcer/Pods-TestAcer.debug.xcconfig"; sourceTree = "<group>"; };
 		F0076047F45033906A01BB99 /* Pods_TestAcerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				1A4F765A1EA9F511003680D3 /* GroupsViewController.swift */,
-				7FAEE4371EA9FE1600D9A1BE /* GroupsTableViewCell.swift */,
+				1AB3C11A1EB2FE770096B143 /* GroupsTableViewCell.swift */,
 			);
 			name = Groups;
 			sourceTree = "<group>";
@@ -133,8 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				1A4F765C1EA9F51F003680D3 /* HistoryViewController.swift */,
-				7FAEE4351EA9FC9B00D9A1BE /* Text ViewController.swift */,
-				7FAEE4391EA9FE2400D9A1BE /* HistoryTableViewCell.swift */,
+				1AB3C11C1EB2FF6A0096B143 /* HistoryTableViewCell.swift */,
+				1AB3C11E1EB301C30096B143 /* TextViewController.swift */,
 			);
 			name = History;
 			sourceTree = "<group>";
@@ -180,8 +180,8 @@
 				1AE239A21EA06B7A009439CF /* AppDelegate.swift */,
 				1AE239AB1EA06B7A009439CF /* Assets.xcassets */,
 				1AE239AD1EA06B7A009439CF /* LaunchScreen.storyboard */,
+				1A3A4ECD1EADD4D40097C329 /* GoogleService-Info.plist */,
 				1AE239B01EA06B7A009439CF /* Info.plist */,
-				7F1C699B1EADD5170042BC5E /* GoogleService-Info.plist */,
 			);
 			path = TestAcer;
 			sourceTree = "<group>";
@@ -304,7 +304,7 @@
 				TargetAttributes = {
 					1AE2399E1EA06B7A009439CF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = A7PLM5UGD3;
+						DevelopmentTeam = 7EFH292C5Z;
 						ProvisioningStyle = Automatic;
 					};
 					1AE239B41EA06B7A009439CF = {
@@ -345,7 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AE239AF1EA06B7A009439CF /* LaunchScreen.storyboard in Resources */,
-				7F1C699C1EADD5170042BC5E /* GoogleService-Info.plist in Resources */,
+				1A3A4ECE1EADD4D40097C329 /* GoogleService-Info.plist in Resources */,
 				1AE239AC1EA06B7A009439CF /* Assets.xcassets in Resources */,
 				1AE239AA1EA06B7A009439CF /* Main.storyboard in Resources */,
 			);
@@ -510,15 +510,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB3C11F1EB301C30096B143 /* TextViewController.swift in Sources */,
 				1A4F764D1EA9C0B4003680D3 /* SignUpViewController.swift in Sources */,
-				7FAEE4361EA9FC9B00D9A1BE /* Text ViewController.swift in Sources */,
 				1AE239D51EA07234009439CF /* LoginViewController.swift in Sources */,
 				1A4F765F1EA9F532003680D3 /* PostViewController.swift in Sources */,
 				1A4F764F1EA9D79F003680D3 /* ProfileViewController.swift in Sources */,
-				7FAEE4381EA9FE1600D9A1BE /* GroupsTableViewCell.swift in Sources */,
+				1AB3C11D1EB2FF6A0096B143 /* HistoryTableViewCell.swift in Sources */,
+				1AB3C11B1EB2FE770096B143 /* GroupsTableViewCell.swift in Sources */,
 				1A4F765D1EA9F51F003680D3 /* HistoryViewController.swift in Sources */,
 				1A4F76611EA9F577003680D3 /* UpdateProfileViewController.swift in Sources */,
-				7FAEE43A1EA9FE2400D9A1BE /* HistoryTableViewCell.swift in Sources */,
 				1AE239A31EA06B7A009439CF /* AppDelegate.swift in Sources */,
 				1A4F765B1EA9F511003680D3 /* GroupsViewController.swift in Sources */,
 			);
@@ -673,11 +673,11 @@
 			baseConfigurationReference = C64F047B0FBBBCB523AA56AE /* Pods-TestAcer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A7PLM5UGD3;
+				DEVELOPMENT_TEAM = 7EFH292C5Z;
 				INFOPLIST_FILE = TestAcer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.TestAcer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdecal.TestAcer77;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -689,11 +689,11 @@
 			baseConfigurationReference = 3C51F3310C4202CEE79F9809 /* Pods-TestAcer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A7PLM5UGD3;
+				DEVELOPMENT_TEAM = 7EFH292C5Z;
 				INFOPLIST_FILE = TestAcer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.iosdecal.TestAcer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosdecal.TestAcer77;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

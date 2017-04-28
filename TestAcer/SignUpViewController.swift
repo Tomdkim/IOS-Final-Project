@@ -19,12 +19,21 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     // User's password.
     @IBOutlet weak var passwordField: UITextField!
+    
+    // User's school.
+    @IBOutlet weak var schoolField: UITextField!
+    
+    // User's classes.
+    @IBOutlet weak var classField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+        schoolField.delegate = self
+        classField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,6 +47,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         guard let password = passwordField.text else { return }
         guard let name = nameField.text else { return }
         
+        if (classField.text == nil || schoolField.text == nil) {
+            let alert = UIAlertController(title: "Sign Up Error", message: "Please write your school and courses.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
         FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: {(user, error) in
             if error == nil {
                 let changeRequest = user!.profileChangeRequest()

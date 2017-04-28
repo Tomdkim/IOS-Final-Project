@@ -7,9 +7,25 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileViewController: UIViewController {
-
+    
+    // Profile picture.
+    @IBOutlet weak var profilePic: UIImageView!
+    
+    // Name.
+    @IBOutlet weak var nameText: UILabel!
+    
+    // Email.
+    @IBOutlet weak var emailText: UILabel!
+    
+    // School.
+    @IBOutlet weak var schoolText: UILabel!
+    
+    // Courses.
+    @IBOutlet weak var coursesText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +37,20 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // Switches to updateProfile view controller.
+    @IBAction func updateProfile(_ sender: UIButton) {
+        performSegue(withIdentifier: "updateProfile", sender: self)
     }
-    */
+    
+    // Signing
+    @IBAction func signOut(_ sender: UIBarButtonItem) {
+        do {
+            try FIRAuth.auth()?.signOut()
+            self.performSegue(withIdentifier: "logOut", sender: self)
+        } catch {
+            print("Error while signing out!")
+        }
+    }
+    
 
 }
