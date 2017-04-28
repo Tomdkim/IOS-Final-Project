@@ -30,7 +30,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //        return (pokemonArray?.count)!
         return 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //        cell = tableView.dequeueReusableCell(withIdentifier: "tableID", for: indexPath) as? TableViewCell
         //        pokemon = pokemonArray?[indexPath.row]
@@ -72,17 +72,13 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         //        performSegue(withIdentifier: "secondLink", sender: selectedIndexPath)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //        if let identifier = segue.identifier {
-        //            if identifier == "secondLink" {
-        //                if let dest = segue.destination as? PokemonInfoViewController {
-        //                    //                    dest.pokemon = pokemon!
-        //                    dest.pokemon = pokemonArray?[(selectedIndexPath?.item)!]
-        //                    if let image = cachedImages[(selectedIndexPath?.item)!] {
-        //                        cell?.pokeImage.image = image
-        //                    }
-        //                }
-        //            }
-        //        }
-    }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let identifier = segue.identifier {
+                if identifier == "textStorage" {
+                    if let dest = segue.destination as? Text_ViewController {
+//                        dest.pokemonArray = sender as! [Pokemon]!
+                    }
+                }
+            }
+        }
 }
