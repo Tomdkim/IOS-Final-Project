@@ -3,7 +3,7 @@
 //  TestAcer
 //
 //  Created by Charles You on 2017-04-27.
-//  Copyright © 2017 Charles You. All rights reserved.
+//  Copyright © 2017 Tom DongHyun Kim. All rights reserved.
 //
 
 import UIKit

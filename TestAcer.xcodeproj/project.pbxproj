@@ -25,6 +25,7 @@
 		1AE239BA1EA06B7A009439CF /* TestAcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239B91EA06B7A009439CF /* TestAcerTests.swift */; };
 		1AE239C51EA06B7A009439CF /* TestAcerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239C41EA06B7A009439CF /* TestAcerUITests.swift */; };
 		1AE239D51EA07234009439CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE239D41EA07234009439CF /* LoginViewController.swift */; };
+		7FF1C49C1EB88C9200558479 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF1C49B1EB88C9200558479 /* Post.swift */; };
 		931B6DECD6EF72308AC23930 /* Pods_TestAcerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E94F019492CDAEC9C92CB9C /* Pods_TestAcerTests.framework */; };
 		B7B6402F3EF7F421DDE330D7 /* Pods_TestAcerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0076047F45033906A01BB99 /* Pods_TestAcerUITests.framework */; };
 		D3A419ACB57E2431949E72B8 /* Pods_TestAcer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5878555CA9AB3BCF6669E3E8 /* Pods_TestAcer.framework */; };
@@ -78,6 +79,7 @@
 		40DE30ACA4B482CBDA9F70F6 /* Pods-TestAcerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerUITests/Pods-TestAcerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5878555CA9AB3BCF6669E3E8 /* Pods_TestAcer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		641CF7499B4D4F5F0B0E4357 /* Pods-TestAcerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcerTests/Pods-TestAcerTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FF1C49B1EB88C9200558479 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		8E94F019492CDAEC9C92CB9C /* Pods_TestAcerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64F047B0FBBBCB523AA56AE /* Pods-TestAcer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAcer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAcer/Pods-TestAcer.debug.xcconfig"; sourceTree = "<group>"; };
 		F0076047F45033906A01BB99 /* Pods_TestAcerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestAcerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 				1A4F76511EA9E91A003680D3 /* History */,
 				1A4F76531EA9E92F003680D3 /* Posting */,
 				1AE239A81EA06B7A009439CF /* Main.storyboard */,
+				7FF1C49B1EB88C9200558479 /* Post.swift */,
 				1AE239A21EA06B7A009439CF /* AppDelegate.swift */,
 				1AE239AB1EA06B7A009439CF /* Assets.xcassets */,
 				1AE239AD1EA06B7A009439CF /* LaunchScreen.storyboard */,
@@ -311,11 +314,10 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = "Charles You";
+				ORGANIZATIONNAME = "Tom DongHyun Kim";
 				TargetAttributes = {
 					1AE2399E1EA06B7A009439CF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 7EFH292C5Z;
 						ProvisioningStyle = Automatic;
 					};
 					1AE239B41EA06B7A009439CF = {
@@ -525,6 +527,7 @@
 				1A4F764D1EA9C0B4003680D3 /* SignUpViewController.swift in Sources */,
 				1AE239D51EA07234009439CF /* LoginViewController.swift in Sources */,
 				1A4F765F1EA9F532003680D3 /* PostViewController.swift in Sources */,
+				7FF1C49C1EB88C9200558479 /* Post.swift in Sources */,
 				1A4F764F1EA9D79F003680D3 /* ProfileViewController.swift in Sources */,
 				1AB3C11D1EB2FF6A0096B143 /* HistoryTableViewCell.swift in Sources */,
 				1AB3C11B1EB2FE770096B143 /* GroupsTableViewCell.swift in Sources */,
@@ -685,7 +688,7 @@
 			baseConfigurationReference = C64F047B0FBBBCB523AA56AE /* Pods-TestAcer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7EFH292C5Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAcer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -701,7 +704,7 @@
 			baseConfigurationReference = 3C51F3310C4202CEE79F9809 /* Pods-TestAcer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7EFH292C5Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestAcer/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

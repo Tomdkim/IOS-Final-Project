@@ -3,7 +3,7 @@
 //  TestAcer
 //
 //  Created by Charles You on 2017-04-20.
-//  Copyright © 2017 Charles You. All rights reserved.
+//  Copyright © 2017 Tom DongHyun Kim. All rights reserved.
 //
 
 import UIKit
@@ -26,7 +26,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     // User's classes.
     @IBOutlet weak var classField: UITextField!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
@@ -35,7 +35,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         schoolField.delegate = self
         classField.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -58,10 +58,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 changeRequest.displayName = name
                 changeRequest.commitChanges(completion: {(err) in
                     if err == nil {
-                        let dbRef = FIRDatabase.database().reference()
-                        let actualUser = dbRef.child("User").childByAutoId()
-                        
-                        self.performSegue(withIdentifier: "signupToMain", sender: actualUser.key)
+                        setUser(school: self.schoolField.text!, classes: self.classField.text!)
+                        self.performSegue(withIdentifier: "signupToMain", sender: self)
                     } else {
                         print(err!)
                     }
@@ -89,5 +87,5 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+    
 }

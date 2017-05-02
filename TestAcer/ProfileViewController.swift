@@ -3,7 +3,7 @@
 //  TestAcer
 //
 //  Created by Charles You on 2017-04-20.
-//  Copyright © 2017 Charles You. All rights reserved.
+//  Copyright © 2017 Tom DongHyun Kim. All rights reserved.
 //
 
 import UIKit
@@ -36,10 +36,22 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //        let userInfo: [String:String] = getUserInfo()
+        //        nameText.text = userInfo["Username"]
+        //        emailText.text = userInfo["Email"]
+        //        schoolText.text = userInfo["School"]
+        //        coursesText.text = userInfo["Courses"]
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //        let userInfo: [String:String] = getUserInfo()
+        //        nameText.text = userInfo["Username"]
+        //        emailText.text = userInfo["Email"]
+        //        schoolText.text = userInfo["School"]
+        //        coursesText.text = userInfo["Courses"]
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,5 +72,7 @@ class ProfileViewController: UIViewController {
         }
     }
     
-
+    @IBAction func unwindToProfile(storyBoard: UIStoryboardSegue) {
+    }
+    
 }
