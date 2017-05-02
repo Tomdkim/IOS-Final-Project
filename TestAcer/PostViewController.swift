@@ -19,6 +19,12 @@ class PostViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     
     @IBOutlet weak var selectPlaceButton: UIButton!
+    @IBOutlet weak var roomNum: UITextField!
+    @IBOutlet weak var schoolName: UITextField!
+    @IBOutlet weak var courseName: UITextField!
+    @IBOutlet weak var timePeriod: UITextField!
+    @IBOutlet weak var shortDescription: UITextField!
+    @IBOutlet weak var becomeTestAcer: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +78,18 @@ class PostViewController: UIViewController {
             }
         })
     }
+    
+    @IBAction func letsBecomeTestAcer(_ becomeTestAcer: UIButton) {
+        if (nameLabel.text != "Location Name" && addressLabel.text != "Location Address" && roomNum.text != "Room #" && schoolName.text != "School" && courseName.text != "Course" && timePeriod.text != "Time Period" && shortDescription.text != "Description") {
+            let alert = UIAlertController(title: "Dear TestAcer", message: "Successfully posted!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(title: "Dear TestAcer", message: "Please fill in all info.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
