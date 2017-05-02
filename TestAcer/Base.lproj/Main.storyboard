@@ -519,7 +519,7 @@
             <objects>
                 <navigationController id="fVp-Xv-SyA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" id="NWT-gD-Q62"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="toF-Xw-ANV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="toF-Xw-ANV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -649,7 +649,7 @@
             <objects>
                 <navigationController id="OLg-MD-V4n" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Groups" id="QgN-Kc-O2A"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HAW-zE-a5y">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HAW-zE-a5y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -666,7 +666,7 @@
             <objects>
                 <navigationController id="HLD-LI-MvA" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History" id="3iI-9a-QHl"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WRh-eB-amt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WRh-eB-amt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -683,7 +683,7 @@
             <objects>
                 <navigationController id="sZb-ze-RPJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post" id="eUO-qb-8sK"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Qfh-N8-n3N">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qfh-N8-n3N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -787,6 +787,7 @@
                         <outlet property="selectPlaceButton" destination="6d9-Xg-AvX" id="nHK-11-qwW"/>
                         <outlet property="shortDescription" destination="ejE-eL-uha" id="FQy-wp-wLd"/>
                         <outlet property="timePeriod" destination="E4F-rF-jwg" id="kKQ-oS-QrY"/>
+                        <segue destination="uux-Db-Zw0" kind="show" identifier="updateGroups" id="AHs-Rv-XmP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAl-4g-NfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -796,5 +797,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lG8-Zi-EP9"/>
+        <segue reference="AHs-Rv-XmP"/>
     </inferredMetricsTieBreakers>
 </document>
