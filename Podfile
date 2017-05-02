@@ -17,6 +17,7 @@ target 'TestAcer' do
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
 
+
   target 'TestAcerTests' do
     inherit! :search_paths
     # Pods for testing

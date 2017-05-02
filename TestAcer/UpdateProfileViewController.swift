@@ -28,7 +28,6 @@ class UpdateProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -43,16 +42,6 @@ class UpdateProfileViewController: UIViewController {
     
     // Updates the profile.
     @IBAction func updateProfile(_ sender: UIButton) {
-    }
-    
-    // Sign Out
-    @IBAction func signOut(_ sender: UIBarButtonItem) {
-        do {
-            try FIRAuth.auth()?.signOut()
-            self.performSegue(withIdentifier: "logOut", sender: self)
-        } catch {
-            print("Error while signing out!")
-        }
     }
     
     

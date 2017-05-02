@@ -51,6 +51,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         })
     }
     
+    @IBAction func prepareForUnwind(storyBoard: UIStoryboardSegue) {
+    }
+    
     // Going to the signup view controller.
     @IBAction func signup(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toSignUp", sender: self)

@@ -11,6 +11,14 @@ import Firebase
 
 class ProfileViewController: UIViewController {
     
+    // Current User.
+    let user = FIRAuth.auth()?.currentUser
+    
+    // Database reference.
+    let dbRef = FIRDatabase.database().reference()
+    
+    // Key value of the node that represents the user.
+    
     // Profile picture.
     @IBOutlet weak var profilePic: UIImageView!
     
@@ -28,7 +36,7 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -42,7 +50,7 @@ class ProfileViewController: UIViewController {
         performSegue(withIdentifier: "updateProfile", sender: self)
     }
     
-    // Signing
+    // Signing out
     @IBAction func signOut(_ sender: UIBarButtonItem) {
         do {
             try FIRAuth.auth()?.signOut()

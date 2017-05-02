@@ -321,10 +321,11 @@
                         <outlet property="profilePic" destination="XMJ-7z-8fb" id="v0i-ra-nTd"/>
                         <outlet property="schoolText" destination="9wH-CM-Ewz" id="Zhq-3Q-Chs"/>
                         <segue destination="GWZ-ZE-DNT" kind="show" identifier="updateProfile" id="G3q-iM-z5m"/>
-                        <segue destination="v8c-vx-hDK" kind="show" id="2jO-BS-wYz"/>
+                        <segue destination="zZi-tb-DB2" kind="unwind" identifier="logOut" unwindAction="prepareForUnwindWithStoryBoard:" id="r5j-ty-mMm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4E-Me-ib3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zZi-tb-DB2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3229.5999999999999" y="391.75412293853077"/>
         </scene>
@@ -419,20 +420,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Update Profile" id="fce-iQ-nzZ">
-                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="zKc-UC-RnF">
-                            <connections>
-                                <action selector="signOut:" destination="GWZ-ZE-DNT" id="3XU-1h-cuT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Update Profile" id="fce-iQ-nzZ"/>
                     <connections>
                         <outlet property="actualEmail" destination="azv-k8-la0" id="Ni9-zL-SZ0"/>
                         <outlet property="coursesText" destination="6Yp-jd-61L" id="TgZ-ev-dzC"/>
                         <outlet property="nameText" destination="mZY-XK-0Y5" id="l6U-Pa-RbF"/>
                         <outlet property="profilePic" destination="P8q-78-e60" id="LSS-jj-db7"/>
                         <outlet property="schoolText" destination="F1T-sd-DBG" id="DAW-hf-MXC"/>
-                        <segue destination="v8c-vx-hDK" kind="show" identifier="logOut" id="Nrl-U6-mro"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEY-DG-nWZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,7 +505,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" id="4jq-qb-gpE"/>
-                    <navigationItem key="navigationItem" id="9SC-1O-IhG"/>
+                    <navigationItem key="navigationItem" title="Groups" id="dEn-2b-G93"/>
                     <connections>
                         <outlet property="groupsTableView" destination="mOh-pa-6DG" id="cBZ-dd-YFi"/>
                     </connections>
@@ -609,7 +603,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="History" id="NIb-Z7-eMe"/>
-                    <navigationItem key="navigationItem" id="D8h-XF-ZyW"/>
+                    <navigationItem key="navigationItem" title="History" id="UFa-da-Bmg"/>
                     <connections>
                         <outlet property="historyTableView" destination="oj5-Hj-yJl" id="u6d-cm-ygR"/>
                         <segue destination="o8w-XY-J2k" kind="show" identifier="textStorage" id="Ote-9Y-bmJ"/>
@@ -739,7 +733,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Post" id="Mga-Vo-rxx"/>
-                    <navigationItem key="navigationItem" id="8aD-ku-if8"/>
+                    <navigationItem key="navigationItem" title="Post" id="TbP-6k-Mh9"/>
                     <connections>
                         <outlet property="addressLabel" destination="reO-jV-YwC" id="CPV-uK-pFA"/>
                         <outlet property="nameLabel" destination="reO-jV-YwC" id="Dtt-Jz-roH"/>
@@ -753,6 +747,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lG8-Zi-EP9"/>
-        <segue reference="Nrl-U6-mro"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -58,7 +58,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
                 changeRequest.displayName = name
                 changeRequest.commitChanges(completion: {(err) in
                     if err == nil {
-                        self.performSegue(withIdentifier: "signupToMain", sender: self)
+                        let dbRef = FIRDatabase.database().reference()
+                        let actualUser = dbRef.child("User").childByAutoId()
+                        
+                        self.performSegue(withIdentifier: "signupToMain", sender: actualUser.key)
                     } else {
                         print(err!)
                     }
@@ -70,6 +73,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             }
         })
     }
+    
+    
     
     // Going to the login view controller.
     @IBAction func login(_ sender: UIButton) {
